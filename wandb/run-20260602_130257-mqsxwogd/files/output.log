@@ -1,0 +1,1633 @@
+wandb: Detected [huggingface_hub.inference, openai] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+  0%|          | 0/6300 [00:00<?, ?it/s]`generation_config` default values have been modified to match model-specific defaults: {'temperature': 0.6, 'top_p': 0.95, 'bos_token_id': 151643}. If this is not desired, please set these values explicitly.
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+decoded:
+
+
+
+</think>
+
+A satellite image showing a landscape with a clear sky and a small island in the distance, possibly indicating a possible location of a satellite dish or a location of a satellite signal source.<|im_end|> tensor([[  1406, 151668,    271,     32,  23210,   2168,   9027,    264,  18414,
+            448,    264,   2797,  12884,    323,    264,   2613,  12922,    304,
+            279,   6010,     11,  10767,  18860,    264,   3204,   3728,    315,
+            264,  23210,  12000,    476,    264,   3728,    315,    264,  23210,
+           8286,   2530,     13, 151645],
+        [  1406, 151668,    271,     32,  23210,   2168,   9027,    264,  18414,
+            448,    264,   2797,  12884,    323,    264,   2613,  12922,    304,
+            279,   6010,     11,  10767,  18860,    264,   3204,   3728,    315,
+            264,  23210,  12000,    476,    264,   3728,    315,    264,  23210,
+           8286,   2530,     13, 151645],
+        [  1406, 151668,    271,     32,  23210,   2168,   9027,    264,  18414,
+            448,    264,   2797,  12884,    323,    264,   2613,  12922,    304,
+            279,   6010,     11,  10767,  18860,    264,   3204,   3728,    315,
+            264,  23210,  12000,    476,    264,   3728,    315,    264,  23210,
+           8286,   2530,     13, 151645],
+        [  1406, 151668,    271,     32,  23210,   2168,   9027,    264,  18414,
+            448,    264,   2797,  12884,    323,    264,   2613,  12922,    304,
+            279,   6010,     11,  10767,  18860,    264,   3204,   3728,    315,
+            264,  23210,  12000,    476,    264,   3728,    315,    264,  23210,
+           8286,   2530,     13, 151645],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    279,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    279,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    279,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    279,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643],
+        [   198, 151668,    271,     32,  23210,   2168,    315,    264,   3151,
+           3728,    476,   1633,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643],
+        [   198, 151668,    271,     32,  23210,   2168,    315,    264,   3151,
+           3728,    476,   1633,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643],
+        [   198, 151668,    271,     32,  23210,   2168,    315,    264,   3151,
+           3728,    476,   1633,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643],
+        [   198, 151668,    271,     32,  23210,   2168,    315,    264,   3151,
+           3728,    476,   1633,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,   1986,    374,    264,  23210,   2168,    315,
+            264,  13638,   3082,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,   1986,    374,    264,  23210,   2168,    315,
+            264,  13638,   3082,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,   1986,    374,    264,  23210,   2168,    315,
+            264,  13638,   3082,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,   1986,    374,    264,  23210,   2168,    315,
+            264,  13638,   3082,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643]], device='cuda:0')
+completions 0: [{'role': 'assistant', 'content': ' distance, possibly indicating a possible location of a satellite dish or a location of a satellite signal source.'}]
+completions 1: [{'role': 'assistant', 'content': ' distance, possibly indicating a possible location of a satellite dish or a location of a satellite signal source.'}]
+completions 2: [{'role': 'assistant', 'content': ' distance, possibly indicating a possible location of a satellite dish or a location of a satellite signal source.'}]
+completions 3: [{'role': 'assistant', 'content': ' distance, possibly indicating a possible location of a satellite dish or a location of a satellite signal source.'}]
+completions 4: [{'role': 'assistant', 'content': ''}]
+completions 5: [{'role': 'assistant', 'content': ''}]
+completions 6: [{'role': 'assistant', 'content': ''}]
+completions 7: [{'role': 'assistant', 'content': ''}]
+completions 8: [{'role': 'assistant', 'content': ''}]
+completions 9: [{'role': 'assistant', 'content': ''}]
+completions 10: [{'role': 'assistant', 'content': ''}]
+completions 11: [{'role': 'assistant', 'content': ''}]
+completions 12: [{'role': 'assistant', 'content': ''}]
+completions 13: [{'role': 'assistant', 'content': ''}]
+completions 14: [{'role': 'assistant', 'content': ''}]
+completions 15: [{'role': 'assistant', 'content': ''}]
+input text forward:
+
+
+
+</think>
+
+This is a satellite image of a forest area.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+input text forward:
+</think>
+
+A satellite image of a specific location or object.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 40, 1024]) torch.Size([4, 40]) torch.Size([4, 72, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 40, 1024]) torch.Size([4, 40]) torch.Size([4, 72, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 40, 1024]) torch.Size([4, 40]) torch.Size([4, 72, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 40, 1024]) torch.Size([4, 40]) torch.Size([4, 72, 1024])
+  0%|          | 1/6300 [00:04<8:28:50,  4.85s/it]
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+decoded:
+
+
+
+
+</think>
+
+A: [Satellite Image Caption]<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|> tensor([[  1022, 151668,    271,     32,     25,    508,  34882,  18155,   4654,
+          37600,     60, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643],
+        [  1022, 151668,    271,     32,     25,    508,  34882,  18155,   4654,
+          37600,     60, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643],
+        [  1022, 151668,    271,     32,     25,    508,  34882,  18155,   4654,
+          37600,     60, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643],
+        [  1022, 151668,    271,     32,     25,    508,  34882,  18155,   4654,
+          37600,     60, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643],
+        [151644,    198, 151644,    198, 151668,    271, 151668,    271,    334,
+           1906,  37600,  66963,   2303,      9,  34882,  18155,   2168,    315,
+           9237,    448,    264,  11682,   1651,    315,    279,  11580,    594,
+           7329,   4908, 151645],
+        [151644,    198, 151644,    198, 151668,    271, 151668,    271,    334,
+           1906,  37600,  66963,   2303,      9,  34882,  18155,   2168,    315,
+           9237,    448,    264,  11682,   1651,    315,    279,  11580,    594,
+           7329,   4908, 151645],
+        [151644,    198, 151644,    198, 151668,    271, 151668,    271,    334,
+           1906,  37600,  66963,   2303,      9,  34882,  18155,   2168,    315,
+           9237,    448,    264,  11682,   1651,    315,    279,  11580,    594,
+           7329,   4908, 151645],
+        [151644,    198, 151644,    198, 151668,    271, 151668,    271,    334,
+           1906,  37600,  66963,   2303,      9,  34882,  18155,   2168,    315,
+           9237,    448,    264,  11682,   1651,    315,    279,  11580,    594,
+           7329,   4908, 151645],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,    315,    279,
+          17330,    334, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,    315,    279,
+          17330,    334, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,    315,    279,
+          17330,    334, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,    315,    279,
+          17330,    334, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643],
+        [  1406, 151668,    271, 151668,    271,     32,  23210,   2168,   9027,
+            264,   5537,    448,    264,   2797,     11,  17232,   1555,     11,
+          10767,  18860,    264,   5944,    476,   1633,     13, 151645, 151643,
+         151643, 151643, 151643],
+        [  1406, 151668,    271, 151668,    271,     32,  23210,   2168,   9027,
+            264,   5537,    448,    264,   2797,     11,  17232,   1555,     11,
+          10767,  18860,    264,   5944,    476,   1633,     13, 151645, 151643,
+         151643, 151643, 151643],
+        [  1406, 151668,    271, 151668,    271,     32,  23210,   2168,   9027,
+            264,   5537,    448,    264,   2797,     11,  17232,   1555,     11,
+          10767,  18860,    264,   5944,    476,   1633,     13, 151645, 151643,
+         151643, 151643, 151643],
+        [  1406, 151668,    271, 151668,    271,     32,  23210,   2168,   9027,
+            264,   5537,    448,    264,   2797,     11,  17232,   1555,     11,
+          10767,  18860,    264,   5944,    476,   1633,     13, 151645, 151643,
+         151643, 151643, 151643]], device='cuda:0')
+completions 0: [{'role': 'assistant', 'content': ''}]
+completions 1: [{'role': 'assistant', 'content': ''}]
+completions 2: [{'role': 'assistant', 'content': ''}]
+completions 3: [{'role': 'assistant', 'content': ''}]
+completions 4: [{'role': 'assistant', 'content': " with a detailed view of the planet's surface.*"}]
+completions 5: [{'role': 'assistant', 'content': " with a detailed view of the planet's surface.*"}]
+completions 6: [{'role': 'assistant', 'content': " with a detailed view of the planet's surface.*"}]
+completions 7: [{'role': 'assistant', 'content': " with a detailed view of the planet's surface.*"}]
+completions 8: [{'role': 'assistant', 'content': ''}]
+completions 9: [{'role': 'assistant', 'content': ''}]
+completions 10: [{'role': 'assistant', 'content': ''}]
+completions 11: [{'role': 'assistant', 'content': ''}]
+completions 12: [{'role': 'assistant', 'content': ' indicating a structure or object.'}]
+completions 13: [{'role': 'assistant', 'content': ' indicating a structure or object.'}]
+completions 14: [{'role': 'assistant', 'content': ' indicating a structure or object.'}]
+completions 15: [{'role': 'assistant', 'content': ' indicating a structure or object.'}]
+input text forward: <|im_start|>
+<|im_start|>
+</think>
+
+</think>
+
+**Image Caption:**
+*Satellite image of Earth with a detailed view of the planet's surface.*<|im_end|>
+input text forward:
+
+
+
+</think>
+
+A: [Satellite Image Caption]<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 30, 1024]) torch.Size([4, 30]) torch.Size([4, 62, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 30, 1024]) torch.Size([4, 30]) torch.Size([4, 62, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 30, 1024]) torch.Size([4, 30]) torch.Size([4, 62, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 30, 1024]) torch.Size([4, 30]) torch.Size([4, 62, 1024])
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+decoded:
+
+
+
+</think>
+
+Satellite image of a region showing natural features and possible land use.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|> tensor([[  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   3204,   4268,    990,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   3204,   4268,    990,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   3204,   4268,    990,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   3204,   4268,    990,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  36468,  18155,   2168,    315,    264,   1697,
+            304,    264,  10072,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  36468,  18155,   2168,    315,    264,   1697,
+            304,    264,  10072,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  36468,  18155,   2168,    315,    264,   1697,
+            304,    264,  10072,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  36468,  18155,   2168,    315,    264,   1697,
+            304,    264,  10072,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,  14126,
+            304,    279,   5537,    315,    730,  19530,  45388,     11,  10259,
+             11,   9027,    279,  18414,    323,   5810,   4419,     13, 151645],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,  14126,
+            304,    279,   5537,    315,    730,  19530,  45388,     11,  10259,
+             11,   9027,    279,  18414,    323,   5810,   4419,     13, 151645],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,  14126,
+            304,    279,   5537,    315,    730,  19530,  45388,     11,  10259,
+             11,   9027,    279,  18414,    323,   5810,   4419,     13, 151645],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,  14126,
+            304,    279,   5537,    315,    730,  19530,  45388,     11,  10259,
+             11,   9027,    279,  18414,    323,   5810,   4419,     13, 151645],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   4650,    369,   4401,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   4650,    369,   4401,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   4650,    369,   4401,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   4650,    369,   4401,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643]],
+       device='cuda:0')
+completions 0: [{'role': 'assistant', 'content': ''}]
+completions 1: [{'role': 'assistant', 'content': ''}]
+completions 2: [{'role': 'assistant', 'content': ''}]
+completions 3: [{'role': 'assistant', 'content': ''}]
+completions 4: [{'role': 'assistant', 'content': ''}]
+completions 5: [{'role': 'assistant', 'content': ''}]
+completions 6: [{'role': 'assistant', 'content': ''}]
+completions 7: [{'role': 'assistant', 'content': ''}]
+completions 8: [{'role': 'assistant', 'content': ' showing the landscape and natural features.'}]
+completions 9: [{'role': 'assistant', 'content': ' showing the landscape and natural features.'}]
+completions 10: [{'role': 'assistant', 'content': ' showing the landscape and natural features.'}]
+completions 11: [{'role': 'assistant', 'content': ' showing the landscape and natural features.'}]
+completions 12: [{'role': 'assistant', 'content': ''}]
+completions 13: [{'role': 'assistant', 'content': ''}]
+completions 14: [{'role': 'assistant', 'content': ''}]
+completions 15: [{'role': 'assistant', 'content': ''}]
+input text forward:
+
+
+</think>
+
+Satellite image of a village in the region of Khorasan, Iran, showing the landscape and natural features.<|im_end|>
+input text forward:
+
+
+</think>
+
+Satellite image of a village in the region of Khorasan, Iran, showing the landscape and natural features.<|im_end|>
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 27, 1024]) torch.Size([4, 27]) torch.Size([4, 59, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 27, 1024]) torch.Size([4, 27]) torch.Size([4, 59, 1024])
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+decoded:
+
+
+
+</think>
+
+The satellite image shows a region with a clear sky, indicating a sunny weather condition.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|> tensor([[  1406, 151668,    271,  ..., 151643, 151643, 151643],
+        [  1406, 151668,    271,  ..., 151643, 151643, 151643],
+        [  1406, 151668,    271,  ..., 151643, 151643, 151643],
+        ...,
+        [  1406, 151668,    271,  ...,   2168,    315,    264],
+        [  1406, 151668,    271,  ...,   2168,    315,    264],
+        [  1406, 151668,    271,  ...,   2168,    315,    264]],
+       device='cuda:0')
+completions 0: [{'role': 'assistant', 'content': '.'}]
+completions 1: [{'role': 'assistant', 'content': '.'}]
+completions 2: [{'role': 'assistant', 'content': '.'}]
+completions 3: [{'role': 'assistant', 'content': '.'}]
+completions 4: [{'role': 'assistant', 'content': ''}]
+completions 5: [{'role': 'assistant', 'content': ''}]
+completions 6: [{'role': 'assistant', 'content': ''}]
+completions 7: [{'role': 'assistant', 'content': ''}]
+completions 8: [{'role': 'assistant', 'content': ' of urban and rural areas, highlighting the contrast between the two.'}]
+completions 9: [{'role': 'assistant', 'content': ' of urban and rural areas, highlighting the contrast between the two.'}]
+completions 10: [{'role': 'assistant', 'content': ' of urban and rural areas, highlighting the contrast between the two.'}]
+completions 11: [{'role': 'assistant', 'content': ' of urban and rural areas, highlighting the contrast between the two.'}]
+completions 12: [{'role': 'assistant', 'content': ' a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a'}]
+completions 13: [{'role': 'assistant', 'content': ' a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a'}]
+completions 14: [{'role': 'assistant', 'content': ' a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a'}]
+completions 15: [{'role': 'assistant', 'content': ' a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a'}]
+input text forward:
+
+
+</think>
+
+A satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a
+input text forward:
+
+
+</think>
+
+A satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a satellite image of a
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 100, 1024]) torch.Size([4, 100]) torch.Size([4, 132, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 100, 1024]) torch.Size([4, 100]) torch.Size([4, 132, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 100, 1024]) torch.Size([4, 100]) torch.Size([4, 132, 1024])
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+decoded:
+
+
+
+</think>
+
+Satellite image of a city skyline.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|> tensor([[  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+          87739,     13, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+          87739,     13, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+          87739,     13, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+          87739,     13, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,  13638,
+            291,   3082,    448,  27950,  53732,    323,   2797,  49293,     13,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,  13638,
+            291,   3082,    448,  27950,  53732,    323,   2797,  49293,     13,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,  13638,
+            291,   3082,    448,  27950,  53732,    323,   2797,  49293,     13,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,  13638,
+            291,   3082,    448,  27950,  53732,    323,   2797,  49293,     13,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,    334,  34882,  18155,   2168,    315,    264,
+           3550,   8056,    334, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,    334,  34882,  18155,   2168,    315,    264,
+           3550,   8056,    334, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,    334,  34882,  18155,   2168,    315,    264,
+           3550,   8056,    334, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,    334,  34882,  18155,   2168,    315,    264,
+           3550,   8056,    334, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,    334,  32123,  66963,    362,   1550,  62936,
+          23210,   2168,    315,    264,  13638,    291,   3082,    304,  10684,
+          13622,     11,  66808,  16807,  80988,    323,  98914,     13, 151645],
+        [   198, 151668,    271,    334,  32123,  66963,    362,   1550,  62936,
+          23210,   2168,    315,    264,  13638,    291,   3082,    304,  10684,
+          13622,     11,  66808,  16807,  80988,    323,  98914,     13, 151645],
+        [   198, 151668,    271,    334,  32123,  66963,    362,   1550,  62936,
+          23210,   2168,    315,    264,  13638,    291,   3082,    304,  10684,
+          13622,     11,  66808,  16807,  80988,    323,  98914,     13, 151645],
+        [   198, 151668,    271,    334,  32123,  66963,    362,   1550,  62936,
+          23210,   2168,    315,    264,  13638,    291,   3082,    304,  10684,
+          13622,     11,  66808,  16807,  80988,    323,  98914,     13, 151645]],
+       device='cuda:0')
+completions 0: [{'role': 'assistant', 'content': ''}]
+completions 1: [{'role': 'assistant', 'content': ''}]
+completions 2: [{'role': 'assistant', 'content': ''}]
+completions 3: [{'role': 'assistant', 'content': ''}]
+completions 4: [{'role': 'assistant', 'content': ''}]
+completions 5: [{'role': 'assistant', 'content': ''}]
+completions 6: [{'role': 'assistant', 'content': ''}]
+completions 7: [{'role': 'assistant', 'content': ''}]
+completions 8: [{'role': 'assistant', 'content': ''}]
+completions 9: [{'role': 'assistant', 'content': ''}]
+completions 10: [{'role': 'assistant', 'content': ''}]
+completions 11: [{'role': 'assistant', 'content': ''}]
+completions 12: [{'role': 'assistant', 'content': ', showcasing diverse flora and fauna.'}]
+completions 13: [{'role': 'assistant', 'content': ', showcasing diverse flora and fauna.'}]
+completions 14: [{'role': 'assistant', 'content': ', showcasing diverse flora and fauna.'}]
+completions 15: [{'role': 'assistant', 'content': ', showcasing diverse flora and fauna.'}]
+input text forward:
+
+
+</think>
+
+Satellite image of a forested area with dense vegetation and clear skies.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+input text forward:
+
+
+</think>
+
+Satellite image of a forested area with dense vegetation and clear skies.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+input text forward:
+
+
+</think>
+
+Satellite image of a forested area with dense vegetation and clear skies.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 27, 1024]) torch.Size([4, 27]) torch.Size([4, 59, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 27, 1024]) torch.Size([4, 27]) torch.Size([4, 59, 1024])
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+decoded:
+
+
+
+</think>
+
+Satellite image of a region showing natural features and potential environmental changes.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|> tensor([[  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   4650,  12158,   4344,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   4650,  12158,   4344,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   4650,  12158,   4344,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   4650,  12158,   4344,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,    264,   3460,   3082,    315,   4268,    448,    264,   2797,
+          12884,    323,    264,   2421,  29514,     13, 151645],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,    264,   3460,   3082,    315,   4268,    448,    264,   2797,
+          12884,    323,    264,   2421,  29514,     13, 151645],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,    264,   3460,   3082,    315,   4268,    448,    264,   2797,
+          12884,    323,    264,   2421,  29514,     13, 151645],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,    264,   3460,   3082,    315,   4268,    448,    264,   2797,
+          12884,    323,    264,   2421,  29514,     13, 151645],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+            448,    264,   3460,   1372,    315,   1251,    323,  13702,     13,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+            448,    264,   3460,   1372,    315,   1251,    323,  13702,     13,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+            448,    264,   3460,   1372,    315,   1251,    323,  13702,     13,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+            448,    264,   3460,   1372,    315,   1251,    323,  13702,     13,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+            448,    264,   3460,     11,   6481,  87739,    323,  16807,  15662,
+          18414,     13, 151645, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+            448,    264,   3460,     11,   6481,  87739,    323,  16807,  15662,
+          18414,     13, 151645, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+            448,    264,   3460,     11,   6481,  87739,    323,  16807,  15662,
+          18414,     13, 151645, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+            448,    264,   3460,     11,   6481,  87739,    323,  16807,  15662,
+          18414,     13, 151645, 151643, 151643, 151643, 151643]],
+       device='cuda:0')
+completions 0: [{'role': 'assistant', 'content': ''}]
+completions 1: [{'role': 'assistant', 'content': ''}]
+completions 2: [{'role': 'assistant', 'content': ''}]
+completions 3: [{'role': 'assistant', 'content': ''}]
+completions 4: [{'role': 'assistant', 'content': ' and a few clouds.'}]
+completions 5: [{'role': 'assistant', 'content': ' and a few clouds.'}]
+completions 6: [{'role': 'assistant', 'content': ' and a few clouds.'}]
+completions 7: [{'role': 'assistant', 'content': ' and a few clouds.'}]
+completions 8: [{'role': 'assistant', 'content': ''}]
+completions 9: [{'role': 'assistant', 'content': ''}]
+completions 10: [{'role': 'assistant', 'content': ''}]
+completions 11: [{'role': 'assistant', 'content': ''}]
+completions 12: [{'role': 'assistant', 'content': '.'}]
+completions 13: [{'role': 'assistant', 'content': '.'}]
+completions 14: [{'role': 'assistant', 'content': '.'}]
+completions 15: [{'role': 'assistant', 'content': '.'}]
+input text forward:
+</think>
+
+Satellite image of a city with a large number of people and buildings.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+input text forward:
+</think>
+
+Satellite image of a city with a large number of people and buildings.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 25, 1024]) torch.Size([4, 25]) torch.Size([4, 57, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 25, 1024]) torch.Size([4, 25]) torch.Size([4, 57, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 25, 1024]) torch.Size([4, 25]) torch.Size([4, 57, 1024])
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+decoded:
+
+</think>
+
+Satellite image of a region.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|> tensor([[   198, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+          87739,     13, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+          87739,     13, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+          87739,     13, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+          87739,     13, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,    785,  23210,   2168,   4933,    264,   5537,
+            304,    279,   4746,    315,    279,   7748,  21575,     11,  38586,
+            279,   4650,    369,   3853,   9977,   2297,    323,    279,   1184,
+            369,   3644,  23046,    311,   2621,    279,  11513,  36160,    553,
+          16062,   9396,   5866,    323,  14226,   9104,   4357,     13, 151645],
+        [  1406, 151668,    271,    785,  23210,   2168,   4933,    264,   5537,
+            304,    279,   4746,    315,    279,   7748,  21575,     11,  38586,
+            279,   4650,    369,   3853,   9977,   2297,    323,    279,   1184,
+            369,   3644,  23046,    311,   2621,    279,  11513,  36160,    553,
+          16062,   9396,   5866,    323,  14226,   9104,   4357,     13, 151645],
+        [  1406, 151668,    271,    785,  23210,   2168,   4933,    264,   5537,
+            304,    279,   4746,    315,    279,   7748,  21575,     11,  38586,
+            279,   4650,    369,   3853,   9977,   2297,    323,    279,   1184,
+            369,   3644,  23046,    311,   2621,    279,  11513,  36160,    553,
+          16062,   9396,   5866,    323,  14226,   9104,   4357,     13, 151645],
+        [  1406, 151668,    271,    785,  23210,   2168,   4933,    264,   5537,
+            304,    279,   4746,    315,    279,   7748,  21575,     11,  38586,
+            279,   4650,    369,   3853,   9977,   2297,    323,    279,   1184,
+            369,   3644,  23046,    311,   2621,    279,  11513,  36160,    553,
+          16062,   9396,   5866,    323,  14226,   9104,   4357,     13, 151645],
+        [   198, 151668,    271,  36468,  18155,   2168,    315,    264,   3283,
+            448,    264,   3460,   1372,    315,   1251,    323,    264,  16807,
+           7042, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  36468,  18155,   2168,    315,    264,   3283,
+            448,    264,   3460,   1372,    315,   1251,    323,    264,  16807,
+           7042, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  36468,  18155,   2168,    315,    264,   3283,
+            448,    264,   3460,   1372,    315,   1251,    323,    264,  16807,
+           7042, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  36468,  18155,   2168,    315,    264,   3283,
+            448,    264,   3460,   1372,    315,   1251,    323,    264,  16807,
+           7042, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643]],
+       device='cuda:0')
+completions 0: [{'role': 'assistant', 'content': ''}]
+completions 1: [{'role': 'assistant', 'content': ''}]
+completions 2: [{'role': 'assistant', 'content': ''}]
+completions 3: [{'role': 'assistant', 'content': ''}]
+completions 4: [{'role': 'assistant', 'content': ''}]
+completions 5: [{'role': 'assistant', 'content': ''}]
+completions 6: [{'role': 'assistant', 'content': ''}]
+completions 7: [{'role': 'assistant', 'content': ''}]
+completions 8: [{'role': 'assistant', 'content': ' potential for future climate change and the need for global cooperation to address the challenges posed by rising sea levels and extreme weather events.'}]
+completions 9: [{'role': 'assistant', 'content': ' potential for future climate change and the need for global cooperation to address the challenges posed by rising sea levels and extreme weather events.'}]
+completions 10: [{'role': 'assistant', 'content': ' potential for future climate change and the need for global cooperation to address the challenges posed by rising sea levels and extreme weather events.'}]
+completions 11: [{'role': 'assistant', 'content': ' potential for future climate change and the need for global cooperation to address the challenges posed by rising sea levels and extreme weather events.'}]
+completions 12: [{'role': 'assistant', 'content': ''}]
+completions 13: [{'role': 'assistant', 'content': ''}]
+completions 14: [{'role': 'assistant', 'content': ''}]
+completions 15: [{'role': 'assistant', 'content': ''}]
+input text forward:
+</think>
+
+Satellite image of a region.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+input text forward:
+</think>
+
+Satellite image of a city skyline.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 45, 1024]) torch.Size([4, 45]) torch.Size([4, 77, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 45, 1024]) torch.Size([4, 45]) torch.Size([4, 77, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 45, 1024]) torch.Size([4, 45]) torch.Size([4, 77, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 45, 1024]) torch.Size([4, 45]) torch.Size([4, 77, 1024])
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+decoded:
+
+
+
+
+</think>
+
+**Satellite Image Caption:** A clear, bright image of a satellite orbiting the Earth.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|> tensor([[  1022, 151668,    271,  ..., 151643, 151643, 151643],
+        [  1022, 151668,    271,  ..., 151643, 151643, 151643],
+        [  1022, 151668,    271,  ..., 151643, 151643, 151643],
+        ...,
+        [   198,    198,    198,  ..., 151643, 151643, 151643],
+        [   198,    198,    198,  ..., 151643, 151643, 151643],
+        [   198,    198,    198,  ..., 151643, 151643, 151643]],
+       device='cuda:0')
+completions 0: [{'role': 'assistant', 'content': ' the Earth.'}]
+completions 1: [{'role': 'assistant', 'content': ' the Earth.'}]
+completions 2: [{'role': 'assistant', 'content': ' the Earth.'}]
+completions 3: [{'role': 'assistant', 'content': ' the Earth.'}]
+completions 4: [{'role': 'assistant', 'content': ''}]
+completions 5: [{'role': 'assistant', 'content': ''}]
+completions 6: [{'role': 'assistant', 'content': ''}]
+completions 7: [{'role': 'assistant', 'content': ''}]
+completions 8: [{'role': 'assistant', 'content': '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'}]
+completions 9: [{'role': 'assistant', 'content': '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'}]
+completions 10: [{'role': 'assistant', 'content': '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'}]
+completions 11: [{'role': 'assistant', 'content': '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'}]
+completions 12: [{'role': 'assistant', 'content': ' and a small, bright star at the horizon.'}]
+completions 13: [{'role': 'assistant', 'content': ' and a small, bright star at the horizon.'}]
+completions 14: [{'role': 'assistant', 'content': ' and a small, bright star at the horizon.'}]
+completions 15: [{'role': 'assistant', 'content': ' and a small, bright star at the horizon.'}]
+input text forward:
+
+
+
+</think>
+
+**Satellite Image Caption:** A clear, bright image of a satellite orbiting the Earth.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+input text forward:
+
+
+</think>
+
+A satellite image of a region showing the landscape and possibly some natural features.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 100, 1024]) torch.Size([4, 100]) torch.Size([4, 132, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 100, 1024]) torch.Size([4, 100]) torch.Size([4, 132, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 100, 1024]) torch.Size([4, 100]) torch.Size([4, 132, 1024])
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+decoded:
+
+
+
+
+
+
+</think>
+
+The satellite image shows a clear view of the Earth's surface, with a bright orange-red coloration, indicating a tropical region, and a large area of land with a clear sky.<|im_end|> tensor([[  1406,    198,    198,    198, 151668,    271,    785,  23210,   2168,
+           4933,    264,   2797,   1651,    315,    279,   9237,    594,   7329,
+             11,    448,    264,   9906,  18575,  31598,   1894,    367,     11,
+          18860,    264,  34048,   5537,     11,    323,    264,   3460,   3082,
+            315,   4268,    448,    264,   2797,  12884,     13, 151645],
+        [  1406,    198,    198,    198, 151668,    271,    785,  23210,   2168,
+           4933,    264,   2797,   1651,    315,    279,   9237,    594,   7329,
+             11,    448,    264,   9906,  18575,  31598,   1894,    367,     11,
+          18860,    264,  34048,   5537,     11,    323,    264,   3460,   3082,
+            315,   4268,    448,    264,   2797,  12884,     13, 151645],
+        [  1406,    198,    198,    198, 151668,    271,    785,  23210,   2168,
+           4933,    264,   2797,   1651,    315,    279,   9237,    594,   7329,
+             11,    448,    264,   9906,  18575,  31598,   1894,    367,     11,
+          18860,    264,  34048,   5537,     11,    323,    264,   3460,   3082,
+            315,   4268,    448,    264,   2797,  12884,     13, 151645],
+        [  1406,    198,    198,    198, 151668,    271,    785,  23210,   2168,
+           4933,    264,   2797,   1651,    315,    279,   9237,    594,   7329,
+             11,    448,    264,   9906,  18575,  31598,   1894,    367,     11,
+          18860,    264,  34048,   5537,     11,    323,    264,   3460,   3082,
+            315,   4268,    448,    264,   2797,  12884,     13, 151645],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+            304,   3405,     13, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+            304,   3405,     13, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+            304,   3405,     13, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+            304,   3405,     13, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  36468,  18155,   2168,    315,    264,   3283,
+          87739, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  36468,  18155,   2168,    315,    264,   3283,
+          87739, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  36468,  18155,   2168,    315,    264,   3283,
+          87739, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,  36468,  18155,   2168,    315,    264,   3283,
+          87739, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,    315,    279,
+           7679,    320,  12699,      8,    481,    362,  19850,   1651,    315,
+            279,   6774,   1849,     13,    334, 151645, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,    315,    279,
+           7679,    320,  12699,      8,    481,    362,  19850,   1651,    315,
+            279,   6774,   1849,     13,    334, 151645, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,    315,    279,
+           7679,    320,  12699,      8,    481,    362,  19850,   1651,    315,
+            279,   6774,   1849,     13,    334, 151645, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,    315,    279,
+           7679,    320,  12699,      8,    481,    362,  19850,   1651,    315,
+            279,   6774,   1849,     13,    334, 151645, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643]],
+       device='cuda:0')
+completions 0: [{'role': 'assistant', 'content': ' with a bright orange-red coloration, indicating a tropical region, and a large area of land with a clear sky.'}]
+completions 1: [{'role': 'assistant', 'content': ' with a bright orange-red coloration, indicating a tropical region, and a large area of land with a clear sky.'}]
+completions 2: [{'role': 'assistant', 'content': ' with a bright orange-red coloration, indicating a tropical region, and a large area of land with a clear sky.'}]
+completions 3: [{'role': 'assistant', 'content': ' with a bright orange-red coloration, indicating a tropical region, and a large area of land with a clear sky.'}]
+completions 4: [{'role': 'assistant', 'content': ''}]
+completions 5: [{'role': 'assistant', 'content': ''}]
+completions 6: [{'role': 'assistant', 'content': ''}]
+completions 7: [{'role': 'assistant', 'content': ''}]
+completions 8: [{'role': 'assistant', 'content': ''}]
+completions 9: [{'role': 'assistant', 'content': ''}]
+completions 10: [{'role': 'assistant', 'content': ''}]
+completions 11: [{'role': 'assistant', 'content': ''}]
+completions 12: [{'role': 'assistant', 'content': ' star system.**'}]
+completions 13: [{'role': 'assistant', 'content': ' star system.**'}]
+completions 14: [{'role': 'assistant', 'content': ' star system.**'}]
+completions 15: [{'role': 'assistant', 'content': ' star system.**'}]
+input text forward:
+
+
+
+
+
+</think>
+
+The satellite image shows a clear view of the Earth's surface, with a bright orange-red coloration, indicating a tropical region, and a large area of land with a clear sky.<|im_end|>
+input text forward:
+</think>
+
+satellite image of a city skyline<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 44, 1024]) torch.Size([4, 44]) torch.Size([4, 76, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 44, 1024]) torch.Size([4, 44]) torch.Size([4, 76, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 44, 1024]) torch.Size([4, 44]) torch.Size([4, 76, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 44, 1024]) torch.Size([4, 44]) torch.Size([4, 76, 1024])
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+decoded:
+
+
+
+
+</think>
+
+Satellite image of a region showing a dense urban area with tall buildings, roads, and traffic.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|> tensor([[  1022, 151668,    271,  ..., 151643, 151643, 151643],
+        [  1022, 151668,    271,  ..., 151643, 151643, 151643],
+        [  1022, 151668,    271,  ..., 151643, 151643, 151643],
+        ...,
+        [  1022, 151668,    271,  ..., 151643, 151643, 151643],
+        [  1022, 151668,    271,  ..., 151643, 151643, 151643],
+        [  1022, 151668,    271,  ..., 151643, 151643, 151643]],
+       device='cuda:0')
+completions 0: [{'role': 'assistant', 'content': ', and traffic.'}]
+completions 1: [{'role': 'assistant', 'content': ', and traffic.'}]
+completions 2: [{'role': 'assistant', 'content': ', and traffic.'}]
+completions 3: [{'role': 'assistant', 'content': ', and traffic.'}]
+completions 4: [{'role': 'assistant', 'content': ''}]
+completions 5: [{'role': 'assistant', 'content': ''}]
+completions 6: [{'role': 'assistant', 'content': ''}]
+completions 7: [{'role': 'assistant', 'content': ''}]
+completions 8: [{'role': 'assistant', 'content': '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'}]
+completions 9: [{'role': 'assistant', 'content': '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'}]
+completions 10: [{'role': 'assistant', 'content': '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'}]
+completions 11: [{'role': 'assistant', 'content': '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'}]
+completions 12: [{'role': 'assistant', 'content': ' forest with dense trees, clear skies, and a serene lake, capturing the beauty of nature and tranquility.'}]
+completions 13: [{'role': 'assistant', 'content': ' forest with dense trees, clear skies, and a serene lake, capturing the beauty of nature and tranquility.'}]
+completions 14: [{'role': 'assistant', 'content': ' forest with dense trees, clear skies, and a serene lake, capturing the beauty of nature and tranquility.'}]
+completions 15: [{'role': 'assistant', 'content': ' forest with dense trees, clear skies, and a serene lake, capturing the beauty of nature and tranquility.'}]
+input text forward:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input text forward:
+
+
+
+</think>
+
+**Satellite Image Caption:**
+A stunning panoramic view of a lush, green forest with dense trees, clear skies, and a serene lake, capturing the beauty of nature and tranquility.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 100, 1024]) torch.Size([4, 100]) torch.Size([4, 132, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 100, 1024]) torch.Size([4, 100]) torch.Size([4, 132, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 100, 1024]) torch.Size([4, 100]) torch.Size([4, 132, 1024])
+{'loss': 0.0, 'grad_norm': 0.0, 'learning_rate': 9.985714285714285e-07, 'num_tokens': 6368.0, 'completions/mean_length': 20.8, 'completions/min_length': 6.2, 'completions/max_length': 34.8, 'completions/clipped_ratio': 0.55, 'completions/mean_terminated_length': 10.56666669845581, 'completions/min_terminated_length': 6.2, 'completions/max_terminated_length': 15.3, 'rewards/rubric_reward/mean': 0.0, 'rewards/rubric_reward/std': 0.0, 'reward': 0.0, 'reward_std': 0.0, 'frac_reward_zero_std': 1.0, 'entropy': 2.929468575119972, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'epoch': 0.0}
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+decoded:
+
+</think>
+
+Satellite image of a forest with dense vegetation and distant mountains.<|im_end|><|endoftext|><|endoftext|><|endoftext|> tensor([[   198, 151668,    271,  34882,  18155,   2168,    315,    264,  13638,
+            448,  27950,  53732,    323,  28727,  23501,     13, 151645, 151643,
+         151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,  13638,
+            448,  27950,  53732,    323,  28727,  23501,     13, 151645, 151643,
+         151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,  13638,
+            448,  27950,  53732,    323,  28727,  23501,     13, 151645, 151643,
+         151643, 151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,  13638,
+            448,  27950,  53732,    323,  28727,  23501,     13, 151645, 151643,
+         151643, 151643],
+        [  1406, 151668,    271,  36468,  18155,   2168,    315,    279,   5537,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643],
+        [  1406, 151668,    271,  36468,  18155,   2168,    315,    279,   5537,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643],
+        [  1406, 151668,    271,  36468,  18155,   2168,    315,    279,   5537,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643],
+        [  1406, 151668,    271,  36468,  18155,   2168,    315,    279,   5537,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643],
+        [  1022, 151668,    271,     32,  94763,    323,  25650,   6109,    315,
+           6993,     11,    448,    264,   2797,  12884,    323,  28727,  23501,
+             13, 151645],
+        [  1022, 151668,    271,     32,  94763,    323,  25650,   6109,    315,
+           6993,     11,    448,    264,   2797,  12884,    323,  28727,  23501,
+             13, 151645],
+        [  1022, 151668,    271,     32,  94763,    323,  25650,   6109,    315,
+           6993,     11,    448,    264,   2797,  12884,    323,  28727,  23501,
+             13, 151645],
+        [  1022, 151668,    271,     32,  94763,    323,  25650,   6109,    315,
+           6993,     11,    448,    264,   2797,  12884,    323,  28727,  23501,
+             13, 151645],
+        [  1406, 151668,    271,  34882,  18155,   2168,   9027,    264,   5537,
+            448,   5810,   4419,     11,   2670,  23501,    323,  35517,     13,
+         151645, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,   9027,    264,   5537,
+            448,   5810,   4419,     11,   2670,  23501,    323,  35517,     13,
+         151645, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,   9027,    264,   5537,
+            448,   5810,   4419,     11,   2670,  23501,    323,  35517,     13,
+         151645, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,   9027,    264,   5537,
+            448,   5810,   4419,     11,   2670,  23501,    323,  35517,     13,
+         151645, 151643]], device='cuda:0')
+completions 0: [{'role': 'assistant', 'content': ''}]
+completions 1: [{'role': 'assistant', 'content': ''}]
+completions 2: [{'role': 'assistant', 'content': ''}]
+completions 3: [{'role': 'assistant', 'content': ''}]
+completions 4: [{'role': 'assistant', 'content': ''}]
+completions 5: [{'role': 'assistant', 'content': ''}]
+completions 6: [{'role': 'assistant', 'content': ''}]
+completions 7: [{'role': 'assistant', 'content': ''}]
+completions 8: [{'role': 'assistant', 'content': ''}]
+completions 9: [{'role': 'assistant', 'content': ''}]
+completions 10: [{'role': 'assistant', 'content': ''}]
+completions 11: [{'role': 'assistant', 'content': ''}]
+completions 12: [{'role': 'assistant', 'content': ''}]
+completions 13: [{'role': 'assistant', 'content': ''}]
+completions 14: [{'role': 'assistant', 'content': ''}]
+completions 15: [{'role': 'assistant', 'content': ''}]
+input text forward:
+</think>
+
+Satellite image of a forest with dense vegetation and distant mountains.<|im_end|><|endoftext|><|endoftext|><|endoftext|>
+input text forward:
+
+
+</think>
+
+satellite image of the region<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 20, 1024]) torch.Size([4, 20]) torch.Size([4, 52, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 20, 1024]) torch.Size([4, 20]) torch.Size([4, 52, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 20, 1024]) torch.Size([4, 20]) torch.Size([4, 52, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 20, 1024]) torch.Size([4, 20]) torch.Size([4, 52, 1024])
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+decoded:
+
+
+
+</think>
+
+**Satellite Image Caption:**
+A stunning satellite image showing a landscape with mountains, forests, and a distant city.<|im_end|> tensor([[  1406, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,  19850,  23210,   2168,   9027,    264,  18414,    448,
+          23501,     11,  35558,     11,    323,    264,  28727,   3283,     13,
+         151645],
+        [  1406, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,  19850,  23210,   2168,   9027,    264,  18414,    448,
+          23501,     11,  35558,     11,    323,    264,  28727,   3283,     13,
+         151645],
+        [  1406, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,  19850,  23210,   2168,   9027,    264,  18414,    448,
+          23501,     11,  35558,     11,    323,    264,  28727,   3283,     13,
+         151645],
+        [  1406, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,  19850,  23210,   2168,   9027,    264,  18414,    448,
+          23501,     11,  35558,     11,    323,    264,  28727,   3283,     13,
+         151645],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,    315,    264,
+          20738,  12030,    334, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,    315,    264,
+          20738,  12030,    334, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,    315,    264,
+          20738,  12030,    334, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,    315,    264,
+          20738,  12030,    334, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [   198, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643]], device='cuda:0')
+completions 0: [{'role': 'assistant', 'content': ', forests, and a distant city.'}]
+completions 1: [{'role': 'assistant', 'content': ', forests, and a distant city.'}]
+completions 2: [{'role': 'assistant', 'content': ', forests, and a distant city.'}]
+completions 3: [{'role': 'assistant', 'content': ', forests, and a distant city.'}]
+completions 4: [{'role': 'assistant', 'content': ''}]
+completions 5: [{'role': 'assistant', 'content': ''}]
+completions 6: [{'role': 'assistant', 'content': ''}]
+completions 7: [{'role': 'assistant', 'content': ''}]
+completions 8: [{'role': 'assistant', 'content': ''}]
+completions 9: [{'role': 'assistant', 'content': ''}]
+completions 10: [{'role': 'assistant', 'content': ''}]
+completions 11: [{'role': 'assistant', 'content': ''}]
+completions 12: [{'role': 'assistant', 'content': ''}]
+completions 13: [{'role': 'assistant', 'content': ''}]
+completions 14: [{'role': 'assistant', 'content': ''}]
+completions 15: [{'role': 'assistant', 'content': ''}]
+input text forward:
+</think>
+
+**Satellite Image of a Remote Area**<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+input text forward:
+
+
+
+</think>
+
+Satellite image of a region.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 28, 1024]) torch.Size([4, 28]) torch.Size([4, 60, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 28, 1024]) torch.Size([4, 28]) torch.Size([4, 60, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 28, 1024]) torch.Size([4, 28]) torch.Size([4, 60, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 28, 1024]) torch.Size([4, 28]) torch.Size([4, 60, 1024])
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+decoded:
+
+
+
+</think>
+
+The satellite image shows a large, bright object in the sky, likely a star or a celestial body, with features that suggest it is in the constellation Taurus.<|im_end|> tensor([[  1406, 151668,    271,    785,  23210,   2168,   4933,    264,   3460,
+             11,   9906,   1633,    304,    279,  12884,     11,   4363,    264,
+           6774,    476,    264,  76380,   2487,     11,    448,   4419,    429,
+           4190,    432,    374,    304,    279,  82386,    350,  42513,     13,
+         151645],
+        [  1406, 151668,    271,    785,  23210,   2168,   4933,    264,   3460,
+             11,   9906,   1633,    304,    279,  12884,     11,   4363,    264,
+           6774,    476,    264,  76380,   2487,     11,    448,   4419,    429,
+           4190,    432,    374,    304,    279,  82386,    350,  42513,     13,
+         151645],
+        [  1406, 151668,    271,    785,  23210,   2168,   4933,    264,   3460,
+             11,   9906,   1633,    304,    279,  12884,     11,   4363,    264,
+           6774,    476,    264,  76380,   2487,     11,    448,   4419,    429,
+           4190,    432,    374,    304,    279,  82386,    350,  42513,     13,
+         151645],
+        [  1406, 151668,    271,    785,  23210,   2168,   4933,    264,   3460,
+             11,   9906,   1633,    304,    279,  12884,     11,   4363,    264,
+           6774,    476,    264,  76380,   2487,     11,    448,   4419,    429,
+           4190,    432,    374,    304,    279,  82386,    350,  42513,     13,
+         151645],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,  19850,  23210,   2168,  66808,    264,   6233,    323,
+           8741,   6109,    315,   6993,    323,   5440,   1062,  36895,    304,
+          25281,     11,    448,  32976,   7987,    323,   2797,  52977,     13,
+         151645],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,  19850,  23210,   2168,  66808,    264,   6233,    323,
+           8741,   6109,    315,   6993,    323,   5440,   1062,  36895,    304,
+          25281,     11,    448,  32976,   7987,    323,   2797,  52977,     13,
+         151645],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,  19850,  23210,   2168,  66808,    264,   6233,    323,
+           8741,   6109,    315,   6993,    323,   5440,   1062,  36895,    304,
+          25281,     11,    448,  32976,   7987,    323,   2797,  52977,     13,
+         151645],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,  19850,  23210,   2168,  66808,    264,   6233,    323,
+           8741,   6109,    315,   6993,    323,   5440,   1062,  36895,    304,
+          25281,     11,    448,  32976,   7987,    323,   2797,  52977,     13,
+         151645],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   4650,   4268,    990,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   4650,   4268,    990,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   4650,   4268,    990,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+           9027,   5810,   4419,    323,   4650,   4268,    990,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,  13638,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,  13638,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,  13638,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,  13638,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643]], device='cuda:0')
+completions 0: [{'role': 'assistant', 'content': ' or a celestial body, with features that suggest it is in the constellation Taurus.'}]
+completions 1: [{'role': 'assistant', 'content': ' or a celestial body, with features that suggest it is in the constellation Taurus.'}]
+completions 2: [{'role': 'assistant', 'content': ' or a celestial body, with features that suggest it is in the constellation Taurus.'}]
+completions 3: [{'role': 'assistant', 'content': ' or a celestial body, with features that suggest it is in the constellation Taurus.'}]
+completions 4: [{'role': 'assistant', 'content': ' scene of nature and technology coexisting in harmony, with vibrant colors and clear visuals.'}]
+completions 5: [{'role': 'assistant', 'content': ' scene of nature and technology coexisting in harmony, with vibrant colors and clear visuals.'}]
+completions 6: [{'role': 'assistant', 'content': ' scene of nature and technology coexisting in harmony, with vibrant colors and clear visuals.'}]
+completions 7: [{'role': 'assistant', 'content': ' scene of nature and technology coexisting in harmony, with vibrant colors and clear visuals.'}]
+completions 8: [{'role': 'assistant', 'content': ''}]
+completions 9: [{'role': 'assistant', 'content': ''}]
+completions 10: [{'role': 'assistant', 'content': ''}]
+completions 11: [{'role': 'assistant', 'content': ''}]
+completions 12: [{'role': 'assistant', 'content': ''}]
+completions 13: [{'role': 'assistant', 'content': ''}]
+completions 14: [{'role': 'assistant', 'content': ''}]
+completions 15: [{'role': 'assistant', 'content': ''}]
+input text forward:
+
+
+</think>
+
+Satellite image of a forest.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+input text forward:
+
+
+</think>
+
+Satellite image of a forest.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 37, 1024]) torch.Size([4, 37]) torch.Size([4, 69, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 37, 1024]) torch.Size([4, 37]) torch.Size([4, 69, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 37, 1024]) torch.Size([4, 37]) torch.Size([4, 69, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 37, 1024]) torch.Size([4, 37]) torch.Size([4, 69, 1024])
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+decoded:
+
+
+
+
+</think>
+
+Satellite image of a cityscape with a large, modern building.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|> tensor([[  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+          57518,    448,    264,   3460,     11,   6481,   4752,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+          57518,    448,    264,   3460,     11,   6481,   4752,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+          57518,    448,    264,   3460,     11,   6481,   4752,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    264,   3283,
+          57518,    448,    264,   3460,     11,   6481,   4752,     13, 151645,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,   2848,   1651,    315,    264,  13638,    291,   3082,
+            448,  27950,  53732,    323,   2797,  49293,     13, 151645],
+        [  1406, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,   2848,   1651,    315,    264,  13638,    291,   3082,
+            448,  27950,  53732,    323,   2797,  49293,     13, 151645],
+        [  1406, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,   2848,   1651,    315,    264,  13638,    291,   3082,
+            448,  27950,  53732,    323,   2797,  49293,     13, 151645],
+        [  1406, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,   2848,   1651,    315,    264,  13638,    291,   3082,
+            448,  27950,  53732,    323,   2797,  49293,     13, 151645],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+            448,    264,   6514,    315,   5810,  54790,    323,  15662,   5671,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+            448,    264,   6514,    315,   5810,  54790,    323,  15662,   5671,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+            448,    264,   6514,    315,   5810,  54790,    323,  15662,   5671,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+            448,    264,   6514,    315,   5810,  54790,    323,  15662,   5671,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,    785,  23210,   2168,    374,   3897,     13,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,    785,  23210,   2168,    374,   3897,     13,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,    785,  23210,   2168,    374,   3897,     13,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643],
+        [   198, 151668,    271,    785,  23210,   2168,    374,   3897,     13,
+         151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643]],
+       device='cuda:0')
+completions 0: [{'role': 'assistant', 'content': ''}]
+completions 1: [{'role': 'assistant', 'content': ''}]
+completions 2: [{'role': 'assistant', 'content': ''}]
+completions 3: [{'role': 'assistant', 'content': ''}]
+completions 4: [{'role': 'assistant', 'content': ' dense vegetation and clear skies.'}]
+completions 5: [{'role': 'assistant', 'content': ' dense vegetation and clear skies.'}]
+completions 6: [{'role': 'assistant', 'content': ' dense vegetation and clear skies.'}]
+completions 7: [{'role': 'assistant', 'content': ' dense vegetation and clear skies.'}]
+completions 8: [{'role': 'assistant', 'content': ''}]
+completions 9: [{'role': 'assistant', 'content': ''}]
+completions 10: [{'role': 'assistant', 'content': ''}]
+completions 11: [{'role': 'assistant', 'content': ''}]
+completions 12: [{'role': 'assistant', 'content': ''}]
+completions 13: [{'role': 'assistant', 'content': ''}]
+completions 14: [{'role': 'assistant', 'content': ''}]
+completions 15: [{'role': 'assistant', 'content': ''}]
+input text forward:
+
+
+</think>
+
+Satellite image of a region with a mix of natural landscapes and urban areas.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+input text forward:
+</think>
+
+The satellite image is provided.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 26, 1024]) torch.Size([4, 26]) torch.Size([4, 58, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 26, 1024]) torch.Size([4, 26]) torch.Size([4, 58, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 26, 1024]) torch.Size([4, 26]) torch.Size([4, 58, 1024])
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+decoded:
+
+
+
+
+</think>
+
+**Satellite image of a city**<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|> tensor([[  1022, 151668,    271,    334,  34882,  18155,   2168,    315,    264,
+           3283,    334, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,    334,  34882,  18155,   2168,    315,    264,
+           3283,    334, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,    334,  34882,  18155,   2168,    315,    264,
+           3283,    334, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,    334,  34882,  18155,   2168,    315,    264,
+           3283,    334, 151645, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643],
+        [  1022, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,   2797,     11,   1550,  62936,  23210,   2168,   9027,
+            264,   3460,     11,   4565,   1717,   5537,    448,    902,   9434,
+           4268,   4419,     11,   4363,    264,  23603,    476,  93988,  18414,
+             13,    576,   2168,  40155,    279,  12767,   2090,    323,  53069,
+           1880,    315,    279,   3082,     11,  80903,    279,  12767,   2090,
+            315,    279,  24869,     13, 151645],
+        [  1022, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,   2797,     11,   1550,  62936,  23210,   2168,   9027,
+            264,   3460,     11,   4565,   1717,   5537,    448,    902,   9434,
+           4268,   4419,     11,   4363,    264,  23603,    476,  93988,  18414,
+             13,    576,   2168,  40155,    279,  12767,   2090,    323,  53069,
+           1880,    315,    279,   3082,     11,  80903,    279,  12767,   2090,
+            315,    279,  24869,     13, 151645],
+        [  1022, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,   2797,     11,   1550,  62936,  23210,   2168,   9027,
+            264,   3460,     11,   4565,   1717,   5537,    448,    902,   9434,
+           4268,   4419,     11,   4363,    264,  23603,    476,  93988,  18414,
+             13,    576,   2168,  40155,    279,  12767,   2090,    323,  53069,
+           1880,    315,    279,   3082,     11,  80903,    279,  12767,   2090,
+            315,    279,  24869,     13, 151645],
+        [  1022, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,   2797,     11,   1550,  62936,  23210,   2168,   9027,
+            264,   3460,     11,   4565,   1717,   5537,    448,    902,   9434,
+           4268,   4419,     11,   4363,    264,  23603,    476,  93988,  18414,
+             13,    576,   2168,  40155,    279,  12767,   2090,    323,  53069,
+           1880,    315,    279,   3082,     11,  80903,    279,  12767,   2090,
+            315,    279,  24869,     13, 151645],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,  23210,   2168,   9027,    264,   3460,     11,  26931,
+           5537,    315,   4268,    448,    264,   2797,  12884,     11,   9434,
+            504,   3550,     11,    448,    264,   2421,   2613,     11,  36967,
+          29514,    323,    264,   2421,  12408,   9434,    304,    279,   4004,
+             13,    576,   2168,  40155,    279,   4586,  18414,    323,  44375,
+           4682,     13, 151645, 151643, 151643],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,  23210,   2168,   9027,    264,   3460,     11,  26931,
+           5537,    315,   4268,    448,    264,   2797,  12884,     11,   9434,
+            504,   3550,     11,    448,    264,   2421,   2613,     11,  36967,
+          29514,    323,    264,   2421,  12408,   9434,    304,    279,   4004,
+             13,    576,   2168,  40155,    279,   4586,  18414,    323,  44375,
+           4682,     13, 151645, 151643, 151643],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,  23210,   2168,   9027,    264,   3460,     11,  26931,
+           5537,    315,   4268,    448,    264,   2797,  12884,     11,   9434,
+            504,   3550,     11,    448,    264,   2421,   2613,     11,  36967,
+          29514,    323,    264,   2421,  12408,   9434,    304,    279,   4004,
+             13,    576,   2168,  40155,    279,   4586,  18414,    323,  44375,
+           4682,     13, 151645, 151643, 151643],
+        [   198, 151668,    271,    334,  34882,  18155,   4654,  37600,  66963,
+           2303,     32,  23210,   2168,   9027,    264,   3460,     11,  26931,
+           5537,    315,   4268,    448,    264,   2797,  12884,     11,   9434,
+            504,   3550,     11,    448,    264,   2421,   2613,     11,  36967,
+          29514,    323,    264,   2421,  12408,   9434,    304,    279,   4004,
+             13,    576,   2168,  40155,    279,   4586,  18414,    323,  44375,
+           4682,     13, 151645, 151643, 151643],
+        [  1406, 151668,    271,    785,  23210,   2168,   4933,    264,   2797,
+           1651,    315,    279,   9237,    594,   7329,     11,  38586,   5810,
+           4419,   1741,    438,  23501,     11,  35558,     11,    323,   3015,
+          12866,     13,   1084,  40155,    279,   8741,   4344,    304,    279,
+           4573,    916,    882,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,    785,  23210,   2168,   4933,    264,   2797,
+           1651,    315,    279,   9237,    594,   7329,     11,  38586,   5810,
+           4419,   1741,    438,  23501,     11,  35558,     11,    323,   3015,
+          12866,     13,   1084,  40155,    279,   8741,   4344,    304,    279,
+           4573,    916,    882,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,    785,  23210,   2168,   4933,    264,   2797,
+           1651,    315,    279,   9237,    594,   7329,     11,  38586,   5810,
+           4419,   1741,    438,  23501,     11,  35558,     11,    323,   3015,
+          12866,     13,   1084,  40155,    279,   8741,   4344,    304,    279,
+           4573,    916,    882,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643],
+        [  1406, 151668,    271,    785,  23210,   2168,   4933,    264,   2797,
+           1651,    315,    279,   9237,    594,   7329,     11,  38586,   5810,
+           4419,   1741,    438,  23501,     11,  35558,     11,    323,   3015,
+          12866,     13,   1084,  40155,    279,   8741,   4344,    304,    279,
+           4573,    916,    882,     13, 151645, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643, 151643, 151643, 151643, 151643]], device='cuda:0')
+completions 0: [{'role': 'assistant', 'content': ''}]
+completions 1: [{'role': 'assistant', 'content': ''}]
+completions 2: [{'role': 'assistant', 'content': ''}]
+completions 3: [{'role': 'assistant', 'content': ''}]
+completions 4: [{'role': 'assistant', 'content': ' large, featureless region with no visible land features, likely a desert or barren landscape. The image captures the vastness and emptiness of the area, emphasizing the vastness of the terrain.'}]
+completions 5: [{'role': 'assistant', 'content': ' large, featureless region with no visible land features, likely a desert or barren landscape. The image captures the vastness and emptiness of the area, emphasizing the vastness of the terrain.'}]
+completions 6: [{'role': 'assistant', 'content': ' large, featureless region with no visible land features, likely a desert or barren landscape. The image captures the vastness and emptiness of the area, emphasizing the vastness of the terrain.'}]
+completions 7: [{'role': 'assistant', 'content': ' large, featureless region with no visible land features, likely a desert or barren landscape. The image captures the vastness and emptiness of the area, emphasizing the vastness of the terrain.'}]
+completions 8: [{'role': 'assistant', 'content': ' of land with a clear sky, visible from space, with a few small, scattered clouds and a few trees visible in the background. The image captures the general landscape and atmospheric conditions.'}]
+completions 9: [{'role': 'assistant', 'content': ' of land with a clear sky, visible from space, with a few small, scattered clouds and a few trees visible in the background. The image captures the general landscape and atmospheric conditions.'}]
+completions 10: [{'role': 'assistant', 'content': ' of land with a clear sky, visible from space, with a few small, scattered clouds and a few trees visible in the background. The image captures the general landscape and atmospheric conditions.'}]
+completions 11: [{'role': 'assistant', 'content': ' of land with a clear sky, visible from space, with a few small, scattered clouds and a few trees visible in the background. The image captures the general landscape and atmospheric conditions.'}]
+completions 12: [{'role': 'assistant', 'content': ' such as mountains, forests, and water bodies. It captures the dynamic changes in the environment over time.'}]
+completions 13: [{'role': 'assistant', 'content': ' such as mountains, forests, and water bodies. It captures the dynamic changes in the environment over time.'}]
+completions 14: [{'role': 'assistant', 'content': ' such as mountains, forests, and water bodies. It captures the dynamic changes in the environment over time.'}]
+completions 15: [{'role': 'assistant', 'content': ' such as mountains, forests, and water bodies. It captures the dynamic changes in the environment over time.'}]
+input text forward:
+
+
+</think>
+
+The satellite image shows a clear view of the Earth's surface, highlighting natural features such as mountains, forests, and water bodies. It captures the dynamic changes in the environment over time.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+input text forward:
+
+
+</think>
+
+The satellite image shows a clear view of the Earth's surface, highlighting natural features such as mountains, forests, and water bodies. It captures the dynamic changes in the environment over time.<|im_end|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 59, 1024]) torch.Size([4, 59]) torch.Size([4, 91, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 59, 1024]) torch.Size([4, 59]) torch.Size([4, 91, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 59, 1024]) torch.Size([4, 59]) torch.Size([4, 91, 1024])
+forward if: torch.Size([4, 32, 1024]) torch.Size([4, 59, 1024]) torch.Size([4, 59]) torch.Size([4, 91, 1024])
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 19, 1024]) torch.Size([16, 19]) torch.Size([16, 51, 1024])
+decoded:
+
+
+
+</think>
+
+Satellite image of a region in the Middle East and North Africa.<|im_end|><|endoftext|> tensor([[  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+            304,    279,  12592,   6326,    323,   4787,  10174,     13, 151645,
+         151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+            304,    279,  12592,   6326,    323,   4787,  10174,     13, 151645,
+         151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+            304,    279,  12592,   6326,    323,   4787,  10174,     13, 151645,
+         151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    264,   5537,
+            304,    279,  12592,   6326,    323,   4787,  10174,     13, 151645,
+         151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    279,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    279,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    279,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1022, 151668,    271,  34882,  18155,   2168,    315,    279,   5537,
+             13, 151645, 151643, 151643, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    279,   9237,
+           9027,    279,  24660,  13604,    448,    862,  19511,   4419,     13,
+         151645],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    279,   9237,
+           9027,    279,  24660,  13604,    448,    862,  19511,   4419,     13,
+         151645],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    279,   9237,
+           9027,    279,  24660,  13604,    448,    862,  19511,   4419,     13,
+         151645],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    279,   9237,
+           9027,    279,  24660,  13604,    448,    862,  19511,   4419,     13,
+         151645],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    279,   3082,
+            304,   3405,     13, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    279,   3082,
+            304,   3405,     13, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    279,   3082,
+            304,   3405,     13, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643],
+        [  1406, 151668,    271,  34882,  18155,   2168,    315,    279,   3082,
+            304,   3405,     13, 151645, 151643, 151643, 151643, 151643, 151643,
+         151643]], device='cuda:0')
+  File "/u/fibz/projects/dinov3/geo/train_fossilvl_RL.py", line 171, in <module>
+    main()
+  File "/u/fibz/projects/dinov3/geo/train_fossilvl_RL.py", line 168, in main
+    trainer.train()
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/trainer.py", line 2328, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/trainer.py", line 2672, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/trainer.py", line 4003, in training_step
+    inputs = self._prepare_inputs(inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/trl/extras/profiling.py", line 98, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/trl/trainer/grpo_trainer.py", line 1279, in _prepare_inputs
+    generation_batch = self._generate_and_score_completions(generation_batch)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/trl/trainer/grpo_trainer.py", line 1588, in _generate_and_score_completions
+    eos_idx[is_eos.any(dim=1)] = is_eos.int().argmax(dim=1)[is_eos.any(dim=1)]
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: argmax(): Expected reduction dim 1 to have non-zero size.

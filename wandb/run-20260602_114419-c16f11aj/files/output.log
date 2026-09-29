@@ -1,0 +1,44 @@
+wandb: Detected [huggingface_hub.inference, openai] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+  0%|          | 0/6300 [00:00<?, ?it/s]`generation_config` default values have been modified to match model-specific defaults: {'temperature': 0.6, 'top_p': 0.95, 'bos_token_id': 151643}. If this is not desired, please set these values explicitly.
+processor call ['\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ', '\n            <|im_start|>user\n<|vision_start|><|vision_end|>\nProvide a concise caption of this satellite image<|im_end|>\n\n            <|im_start|>assistant\n            <think>\n\n            </think>\n\n            <|im_end|>\n\n            ']
+input text generate:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+            <|im_start|>assistant
+            <think>
+
+            </think>
+
+            <|im_end|>
+
+
+generate if: torch.Size([16, 32, 1024]) torch.Size([16, 32, 1024]) torch.Size([16, 32]) torch.Size([16, 64, 1024])
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Traceback (most recent call last):
+  File "/u/fibz/projects/dinov3/geo/train_fossilvl_RL.py", line 173, in <module>
+    main()
+  File "/u/fibz/projects/dinov3/geo/train_fossilvl_RL.py", line 170, in main
+    trainer.train()
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/trainer.py", line 2328, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/trainer.py", line 2672, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/trainer.py", line 4003, in training_step
+    inputs = self._prepare_inputs(inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/trl/extras/profiling.py", line 98, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/trl/trainer/grpo_trainer.py", line 1279, in _prepare_inputs
+    generation_batch = self._generate_and_score_completions(generation_batch)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/trl/trainer/grpo_trainer.py", line 1588, in _generate_and_score_completions
+    eos_idx[is_eos.any(dim=1)] = is_eos.int().argmax(dim=1)[is_eos.any(dim=1)]
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: argmax(): Expected reduction dim 1 to have non-zero size.

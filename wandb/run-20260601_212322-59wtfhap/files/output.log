@@ -1,0 +1,113 @@
+wandb: Detected [huggingface_hub.inference, openai] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+  0%|          | 0/6300 [00:00<?, ?it/s]
+input text:
+            <|im_start|>user
+<|vision_start|><|vision_end|>
+Provide a concise caption of this satellite image<|im_end|>
+
+
+kwargs in generate: {'attention_mask': tensor([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+       device='cuda:0'), 'generation_config': GenerationConfig {
+  "do_sample": true,
+  "eos_token_id": 151645,
+  "max_new_tokens": 256,
+  "pad_token_id": 151643,
+  "top_k": null
+}
+}
+input ids tensor([[   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797],
+        [   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797],
+        [   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797],
+        [   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797],
+        [   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797],
+        [   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797],
+        [   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797],
+        [   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797],
+        [   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797],
+        [   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797],
+        [   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797],
+        [   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797],
+        [   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797],
+        [   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797],
+        [   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797],
+        [   198,   1797, 151644,    872,    198, 151652, 151653,    198,  60424,
+            264,  63594,  17256,    315,    419,  23210,   2168, 151645,    271,
+           1797]], device='cuda:0')
+think end 151668
+SPLIT tensor([], device='cuda:0', dtype=torch.int64)
+  File "/u/fibz/projects/dinov3/geo/train_fossilvl_RL.py", line 177, in <module>
+    main()
+  File "/u/fibz/projects/dinov3/geo/train_fossilvl_RL.py", line 174, in main
+    trainer.train()
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/trainer.py", line 2328, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/trainer.py", line 2672, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/trainer.py", line 4003, in training_step
+    inputs = self._prepare_inputs(inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/trl/extras/profiling.py", line 98, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/trl/trainer/grpo_trainer.py", line 1279, in _prepare_inputs
+    generation_batch = self._generate_and_score_completions(generation_batch)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/trl/trainer/grpo_trainer.py", line 1577, in _generate_and_score_completions
+    prompt_completion_ids = unwrapped_model.generate(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/fibz/projects/dinov3/geo/model/hf_fossilvl_wrapper.py", line 230, in generate
+    model_inputs = self.fossil.decoder.merge_inputs(image_embeddings, text_embeddings, input_ids)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/fibz/projects/dinov3/geo/model/decoder.py", line 84, in merge_inputs
+    labels[:, split + vision_embeddings.shape[1]:] = input_ids[:, split:]
+                                                     ~~~~~~~~~^^^^^^^^^^^
+TypeError: only integer tensors of a single element can be converted to an index

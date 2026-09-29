@@ -1,0 +1,106 @@
+wandb: Detected [huggingface_hub.inference, openai] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+  0%|          | 0/6300 [00:00<?, ?it/s]
+processed image torch.Size([3, 224, 224])
+processed image torch.Size([3, 224, 224])
+processed image torch.Size([3, 224, 224])
+processed image torch.Size([3, 224, 224])
+processed image torch.Size([3, 224, 224])
+processed image torch.Size([3, 224, 224])
+processed image torch.Size([3, 224, 224])
+processed image torch.Size([3, 224, 224])
+processed image torch.Size([3, 224, 224])
+processed image torch.Size([3, 224, 224])
+processed image torch.Size([3, 224, 224])
+processed image torch.Size([3, 224, 224])
+processed image torch.Size([3, 224, 224])
+processed image torch.Size([3, 224, 224])
+processed image torch.Size([3, 224, 224])
+processed image torch.Size([3, 224, 224])
+{'padding': True, 'padding_side': 'left', 'add_special_tokens': False}
+kwargs {'attention_mask': tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0'), 'generation_config': GenerationConfig {
+  "do_sample": true,
+  "eos_token_id": 151645,
+  "max_new_tokens": 256,
+  "pad_token_id": 151643,
+  "top_k": null
+}
+}
+prompt None
+conversations None
+input_ids tensor([[60424,   264, 63594, 17256,   315,   419, 23210,  2168],
+        [60424,   264, 63594, 17256,   315,   419, 23210,  2168],
+        [60424,   264, 63594, 17256,   315,   419, 23210,  2168],
+        [60424,   264, 63594, 17256,   315,   419, 23210,  2168],
+        [60424,   264, 63594, 17256,   315,   419, 23210,  2168],
+        [60424,   264, 63594, 17256,   315,   419, 23210,  2168],
+        [60424,   264, 63594, 17256,   315,   419, 23210,  2168],
+        [60424,   264, 63594, 17256,   315,   419, 23210,  2168],
+        [60424,   264, 63594, 17256,   315,   419, 23210,  2168],
+        [60424,   264, 63594, 17256,   315,   419, 23210,  2168],
+        [60424,   264, 63594, 17256,   315,   419, 23210,  2168],
+        [60424,   264, 63594, 17256,   315,   419, 23210,  2168],
+        [60424,   264, 63594, 17256,   315,   419, 23210,  2168],
+        [60424,   264, 63594, 17256,   315,   419, 23210,  2168],
+        [60424,   264, 63594, 17256,   315,   419, 23210,  2168],
+        [60424,   264, 63594, 17256,   315,   419, 23210,  2168]],
+       device='cuda:0')
+  File "/u/fibz/projects/dinov3/geo/train_fossilvl_RL.py", line 169, in <module>
+    main()
+  File "/u/fibz/projects/dinov3/geo/train_fossilvl_RL.py", line 166, in main
+    trainer.train()
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/trainer.py", line 2328, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/trainer.py", line 2672, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/trainer.py", line 4003, in training_step
+    inputs = self._prepare_inputs(inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/trl/extras/profiling.py", line 98, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/trl/trainer/grpo_trainer.py", line 1279, in _prepare_inputs
+    generation_batch = self._generate_and_score_completions(generation_batch)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/trl/trainer/grpo_trainer.py", line 1577, in _generate_and_score_completions
+    prompt_completion_ids = unwrapped_model.generate(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/fibz/projects/dinov3/geo/model/hf_fossilvl_wrapper.py", line 212, in generate
+    inputs = self.fossil.decoder.prepare_inputs(conversations, add_gen_prompt=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/fibz/projects/dinov3/geo/model/decoder.py", line 96, in prepare_inputs
+    texts = self.tokenizer.apply_chat_template(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/tokenization_utils_base.py", line 1640, in apply_chat_template
+    rendered_chat, generation_indices = render_jinja_template(
+                                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/utils/chat_template_utils.py", line 521, in render_jinja_template
+    rendered_chat = compiled_template.render(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "<template>", line 13, in top-level template code
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/jinja2/sandbox.py", line 327, in getattr
+    value = getattr(obj, attribute)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: None has no element 0

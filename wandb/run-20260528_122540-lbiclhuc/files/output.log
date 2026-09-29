@@ -1,0 +1,35 @@
+wandb: Detected [huggingface_hub.inference, openai] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+  0%|          | 0/6300 [00:00<?, ?it/s]Traceback (most recent call last):
+preprocess ['Provide a concise caption of this satellite image', 'Provide a concise caption of this satellite image', 'Provide a concise caption of this satellite image', 'Provide a concise caption of this satellite image', 'Provide a concise caption of this satellite image', 'Provide a concise caption of this satellite image', 'Provide a concise caption of this satellite image', 'Provide a concise caption of this satellite image', 'Provide a concise caption of this satellite image', 'Provide a concise caption of this satellite image', 'Provide a concise caption of this satellite image', 'Provide a concise caption of this satellite image', 'Provide a concise caption of this satellite image', 'Provide a concise caption of this satellite image', 'Provide a concise caption of this satellite image', 'Provide a concise caption of this satellite image']
+CONVO [[{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}], [{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}], [{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}], [{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}], [{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}], [{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}], [{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}], [{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}], [{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}], [{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}], [{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}], [{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}], [{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}], [{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}], [{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}], [{'role': 'user', 'content': 'Provide a concise caption of this satellite image'}]]
+  File "/u/fibz/projects/dinov3/geo/train_fossilvl_RL.py", line 179, in <module>
+    main()
+  File "/u/fibz/projects/dinov3/geo/train_fossilvl_RL.py", line 176, in main
+    trainer.train()
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/trainer.py", line 2328, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/trainer.py", line 2672, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/transformers/trainer.py", line 4003, in training_step
+    inputs = self._prepare_inputs(inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/trl/extras/profiling.py", line 98, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/trl/trainer/grpo_trainer.py", line 1279, in _prepare_inputs
+    generation_batch = self._generate_and_score_completions(generation_batch)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/recpinfo/users/fibz/miniforge3/envs/cap/lib/python3.12/site-packages/trl/trainer/grpo_trainer.py", line 1577, in _generate_and_score_completions
+    prompt_completion_ids = unwrapped_model.generate(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/fibz/projects/dinov3/geo/model/hf_fossilvl_wrapper.py", line 178, in generate
+    model_inputs = self.fossil.decoder.merge_inputs(image_embeddings, text_embeddings, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/fibz/projects/dinov3/geo/model/decoder.py", line 82, in merge_inputs
+    labels[:, split + vision_embeddings.shape[1]:] = input_ids[:, split:]
+                                                     ~~~~~~~~~^^^^^^^^^^^
+TypeError: only integer tensors of a single element can be converted to an index

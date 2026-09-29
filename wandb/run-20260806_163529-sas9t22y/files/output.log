@@ -1,0 +1,11 @@
+  2%|▏         | 2119/88518 [11:19<6:40:12,  3.60it/s]wandb: WARNING Fatal error while uploading data. Some run data will not be synced, but it will still be written to disk. Use `wandb sync` at the end of the run to try uploading.
+100%|██████████| 88518/88518 [7:52:17<00:00,  3.12it/s]   
+{'loss': 3.5214, 'grad_norm': 0.9865691065788269, 'learning_rate': 0.0008870399240832373, 'num_tokens': 36340674.0, 'mean_token_accuracy': 0.4331000318668783, 'epoch': 0.23}
+{'loss': 3.4151, 'grad_norm': 0.969642162322998, 'learning_rate': 0.0007740685510291692, 'num_tokens': 72700715.0, 'mean_token_accuracy': 0.4452168363392353, 'epoch': 0.45}
+{'loss': 3.3642, 'grad_norm': 0.9478257894515991, 'learning_rate': 0.0006610971779751012, 'num_tokens': 109060090.0, 'mean_token_accuracy': 0.4511048120319843, 'epoch': 0.68}
+{'loss': 3.3212, 'grad_norm': 1.0784814357757568, 'learning_rate': 0.000548125804921033, 'num_tokens': 145385040.0, 'mean_token_accuracy': 0.45632286806404593, 'epoch': 0.9}
+{'loss': 3.2783, 'grad_norm': 0.9972386360168457, 'learning_rate': 0.0004351544318669649, 'num_tokens': 181753210.0, 'mean_token_accuracy': 0.4615530930368225, 'epoch': 1.13}
+{'loss': 3.2368, 'grad_norm': 1.3103820085525513, 'learning_rate': 0.00032218305881289686, 'num_tokens': 218046349.0, 'mean_token_accuracy': 0.4668237697854638, 'epoch': 1.36}
+{'loss': 3.1993, 'grad_norm': 1.4190237522125244, 'learning_rate': 0.0002092116857588287, 'num_tokens': 254405237.0, 'mean_token_accuracy': 0.47168466301858425, 'epoch': 1.58}
+{'loss': 3.1582, 'grad_norm': 1.2055528163909912, 'learning_rate': 9.624031270476062e-05, 'num_tokens': 290801898.0, 'mean_token_accuracy': 0.47707452760487795, 'epoch': 1.81}
+{'train_runtime': 28340.7827, 'train_samples_per_second': 399.783, 'train_steps_per_second': 3.123, 'train_loss': 3.293475863489629, 'num_tokens': 321759721.0, 'mean_token_accuracy': 0.48164754799814, 'epoch': 2.0}
